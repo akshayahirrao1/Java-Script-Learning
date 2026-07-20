@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    /* overflow: hidden; */
+    margin: 0;
+    min-height: 100vh;
+
+}
+.container{
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(3px);
+    background-image: url("https://static.vecteezy.com/system/resources/previews/035/415/828/original/financial-currency-background-templates-on-gradient-blue-used-in-stock-market-and-financial-concept-design-on-blue-color-background-vector.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+    min-height: 100vh;  
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    max-width: 1200px;
+    padding: 30px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+}
+#expense-header{
+    text-align: center;
+}
+
+.balance-row{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 30px 0;
+    justify-content: space-between;
+}
+.balance-row h2{
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    
+}
+.balance-row button{
+    padding: 12px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: limegreen;
+    color: white;
+    cursor: pointer;
+}
+#showbalance{
+    width: 60px;
+    height: 25px;
+    resize: none;
+    font-size: 18px;
+    padding: 2px;
+}
+.summary{
+    display: flex;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.card{
+    flex: 1;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    min-height: 120px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card h3{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card h2{
+    font-size: 2.5rem;
+}
+
+.expense-card h2{
+    color: red;
+}
+
+.budget-card h2{
+    color: green;
+}
+
+#searchBox{
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    background-color: #eee;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.transaction{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
+    margin-bottom: 15px;
+
+    border: 1px solid #ddd;
+    background-color: white;
+}
+.expense{
+    border-right: 6px solid red;
+}
+
+.income{
+    border-right: 6px solid green;
+}
+.transaction button{
+    background-color: limegreen;
+    color: white;
+    border: none;
+
+    padding: 10px 20px;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.modal{
+    display: none;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background: rgba(0,0,0,0.5);
+
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content{
+    background: white;
+    width: 350px;
+
+    padding: 20px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.modal-content input,
+.modal-content select{
+    padding: 10px;
+    font-size: 16px;
+}
+
+.modal-buttons{
+    display: flex;
+    justify-content: space-between;
+}

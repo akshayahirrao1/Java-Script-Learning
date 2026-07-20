@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="expense-header">Expense Tracker</h1>
+        <hr>
+        <div class="balance-row">
+            <h3>Balance: ₹<span id="showbalance">0</span></h3>
+            <button id="addbutton">ADD</button>
+        </div>
+        <div class="summary">
+
+            <div class="card expense-card">
+                <h3>Expense</h3>
+                <h2 id="expenseValue">₹0</h2>
+            </div>
+
+            <div class="card budget-card">
+                <h3>Budget</h3>
+                <h2 id="budgetValue">₹0</h2>
+            </div>
+
+        </div>
+        <div class="transactions-section">
+
+            <h2>Transactions</h2>
+
+            <input type="text" id="searchBox" placeholder="Search here">
+
+            <div id="transactionList">
+
+                <!-- <div class="transaction expense">
+                    <span>Birthday Gifts</span>
+                    <span>₹500</span>
+                    <button>Remove</button>
+                </div>
+
+                <div class="transaction income">
+                    <span>Pocket Money</span>
+                    <span>₹1750</span>
+                    <button>Remove</button>
+                </div> -->
+
+            </div>
+
+        </div>
+        <div id="modal" class="modal">
+
+            <div class="modal-content">
+
+                <h2>Add Transaction</h2>
+
+                <input type="text" id="name" placeholder="Transaction Name">
+
+                <input type="number" id="amount" placeholder="Amount">
+
+                <select id="type">
+                    <option value="income">Income</option>
+                    <option value="expense">Expense</option>
+                </select>
+
+                <div class="modal-buttons">
+                    <button id="saveBtn">Save</button>
+                    <button id="closeBtn">Cancel</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
